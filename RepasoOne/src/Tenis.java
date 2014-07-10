@@ -18,25 +18,7 @@ public class Tenis {
     
     String j1="Jugador 1";
     String j2="Jugador 2";
-    int p1=0;
-    int p2=0;
-    int a=0;
-    int b=0;
-    int limite=1;
     
-    
-   /* public int[] point (int a, int b){
-        if(a==0 && b==0){
-            scor[0]=a;
-            scor[0]=b;
-            return scor;
-        } else {
-            if(a==15 && b==)
-        }
-    } 
-    */
-    
-
     public String score(int [] pun){
         if(pun[0]==0 && pun[1]==0){
         return ("Love-All");
@@ -156,15 +138,6 @@ public class Tenis {
     }
                 
           
-    public int puntoNormal(int a){
-        a=a+15;
-        return a;
-    }
-    
-    public int puntoFinal(int a){
-        a=a+10;
-        return a;
-    }
    
     
 }
