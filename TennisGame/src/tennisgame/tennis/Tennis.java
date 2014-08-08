@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package tennisgame;
+package tennisgame.tennis;
 
+import tennisgame.idioma.Idioma;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -107,5 +108,4 @@ public class Tennis {
     private Idioma getIdioma() {
         return idioma;
     }
-    
 }

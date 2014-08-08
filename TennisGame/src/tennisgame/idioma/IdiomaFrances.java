@@ -1,44 +1,44 @@
-package tennisgame;
+package tennisgame.idioma;
 
 /**
  *
  * @author Lucho
  */
-class IdiomaAleman extends IdiomaAbstract {
+public class IdiomaFrances extends IdiomaAbstract {
 
     @Override
     public String getZero() {
-        return "Null";
+        return "Zéro";
     }
 
     @Override
     public String getFifteen() {
-        return "Fünfzehn";
+        return "Quinze";
     }
 
     @Override
     public String getThirty() {
-        return "Dreißig";
+        return "Trente";
     }
 
     @Override
     public String getForty() {
-        return "Vierzig";
+        return "Quarente";
     }
 
     @Override
     public String getAll() {
-        return "Gleich";
+        return "Même";
     }
 
     @Override
     public String getDeuce() {
-        return "Ziehen";
+        return "Tirer";
     }
 
     @Override
     public String getWins() {
-        return "Verdienen";
+        return "Gagner";
     }
 
     @Override

@@ -256,13 +256,10 @@ public final class Principal extends javax.swing.JFrame {
 	cancha.setSize(600, 400);
 	cancha.setLocation(400, 200);
 	cancha.setTitle("Tennis Game");
-	cancha.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	//GameTennis game = new GameTennis();
+	cancha.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	cancha.add(game);
 	cancha.addKeyListener(game);
 	game.setBackground(Color.LIGHT_GRAY);
-	//Thread hiloGame = new Thread(game);
-	//hiloGame.start();
 	cancha.setVisible(true);
 	cancha.setResizable(false);
     }

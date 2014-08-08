@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 
-package tennisgame;
+package tennisgame.idioma;
 
 /**
  *
  * @author Lucho
  */
-abstract class IdiomaAbstract implements Idioma {
+public abstract class IdiomaAbstract implements Idioma {
     
     @Override
     public String getNumber(int puntaje) {

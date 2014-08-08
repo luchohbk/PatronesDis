@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package tennisgame;
+package tennisgame.tennis;
 
 import java.awt.Color;
 import java.util.logging.Level;
@@ -26,6 +26,9 @@ public class Tablero extends javax.swing.JFrame {
     DefaultTableModel tablam;    
     String nombreJugador1;
     String nombreJugador2;
+    int a;
+    int b;
+    String d[]=new String[3];
     public Tablero() {
         initComponents();
         JOptionPane.showMessageDialog(this,"Welcome to play tennis");
@@ -87,9 +90,9 @@ public class Tablero extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 337, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,11 +106,10 @@ public class Tablero extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
-       String h;
+        String h;
         String j;
         String k;
         String f[]=new String[3];
-        int d[]=new int[2];
         int row = jTable1.getSelectedRow();
             
 
@@ -119,11 +121,17 @@ public class Tablero extends javax.swing.JFrame {
          h=(f[0]=jTable1.getValueAt(t, 0).toString());
             j=(f[1]=jTable1.getValueAt(t, 1).toString());
             k=(f[2]=jTable1.getValueAt(t, 2).toString());
-            d[0]=Integer.parseInt(h);
-            d[1]=Integer.parseInt(j);
-            
+            a=Integer.parseInt(h);
+            b=Integer.parseInt(j);
+            d[0]=f[0];
+            d[1]=f[1];
+            d[2]=f[2];
+            actualizarMarcador();
     }//GEN-LAST:event_jTable1MouseClicked
-
+    
+    public String [] actualizarMarcador(){
+        return d;
+    }
     /**
      * @param args the command line arguments
      */
